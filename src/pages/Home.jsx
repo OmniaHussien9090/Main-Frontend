@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { SearchContext } from "../searchContext/SearchContext.jsx";
 import Carousel from "../components/carousel/carousel.jsx";
 import Chair from "../assets/images/chair.png";
@@ -15,10 +15,32 @@ import coverTwo from "../assets/images/c2.jpg";
 import coverThree from "../assets/images/c3.jpg";
 import coverFour from "../assets/images/c4.jpg";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 function Home() {
   const { t } = useTranslation("home");
   const { searchQuery } = useContext(SearchContext);
+  const [posts, setPosts] = useState([]);
+    const [filteredPosts, setFilteredPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        // Replace with your actual API call
+        const response = await fetch("http://localhost:3000/posts");
+        const postsData = await response.json();
+        setPosts(postsData.posts);
+        setFilteredPosts(postsData.posts);
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+        setLoading(false);
+      }
+    };
+
+    getPosts();
+  }, []);
 
   const sections = [
     {
@@ -192,6 +214,66 @@ function Home() {
             </div>
           </div>
         ))}
+      </div>
+      {/* Latest Blog Posts Section */}
+      <div className="my-20 px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#373737] uppercase font-['PTSans']">
+            {t("Recent Posts") || "Latest Blog Posts"}
+          </h2>
+          <div className="w-20 h-1 bg-[#373737] mx-auto mt-4"></div>
+        </div>
+
+        {loading ? (
+          <div className="text-center">Loading posts...</div>
+        ) : filteredPosts.length > 0 ? (
+          <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 max-w-6xl mx-auto">
+            {filteredPosts.map((post) => (
+              <div
+                key={post._id}
+                className="card bg-base-100 shadow-sm hover:shadow-md transition-shadow w-full max-w-md mx-auto"
+              >
+                <figure className="h-48 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title.en}
+                    className="w-full h-full object-cover"
+                  />
+                </figure>
+                <div className="card-body">
+                  <p className="text-sm text-[#777777] font-[PTSans]">
+                    {post.createdAt}
+                  </p>
+                  <h3 className="card-title text-lg sm:text-xl text-[#2D2D2D] font-bold font-[PTSans] mt-2">
+                    {post.title.en}
+                  </h3>
+                  <p className="text-[#ABABAB] mt-2 mb-4">
+                    {post.description.en}
+                  </p>
+                  <div className="card-actions">
+                    <Link to={`/blog/${post._id}`}>
+                      <button className="btn btn-outline btn-sm sm:btn-md">
+                        {t("readMore")} ❯
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-500">
+            {t("noPostsFound") || "No blog posts found."}
+          </p>
+        )}
+
+        <div className="text-center mt-12">
+          <Link to="/blog">
+            <button className="btn btn-outline">
+              {t("viewAllPosts") || "View All Blog Posts"} ❯
+            </button>
+          </Link>
+        </div>
       </div>
 
       {/* Quotes Carousel */}
