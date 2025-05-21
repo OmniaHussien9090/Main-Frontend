@@ -8,10 +8,14 @@ import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { SearchContext } from "../../searchContext/SearchContext.jsx";
 import { Link } from "react-router-dom";
+import { FiHeart } from "react-icons/fi";
 
 function Navbar() {
   const { t, i18n } = useTranslation("navbar");
   const cartItemsCount = useSelector((state) => state.cart.items.length);
+  const wishlistItemsCount = useSelector(
+    (state) => state.wishlist.items.length
+  );
   const wishlistCount = useSelector(
     (state) => state.wishlist?.items?.length || 0
   );
@@ -19,6 +23,7 @@ function Navbar() {
   const { pathname } = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
+
   const [showSearchInput, setShowSearchInput] = useState(false);
   const [userName, setUserName] = useState(null);
   const searchRef = useRef(null);
@@ -203,14 +208,17 @@ function Navbar() {
             {/* Favorites */}
             <div className="relative flex items-center justify-center min-w-[20px] min-h-[20px]">
               <Link to="/wishlist" className="relative">
-                <FaHeart
-                  className={`w-5 h-5 min-w-[20px] min-h-[20px] cursor-pointer ${iconColor} hover:opacity-80 transition-opacity`}
-                />
-                {wishlistCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-                    {wishlistCount}
-                  </span>
-                )}
+                <div className="relative">
+                  <FiHeart
+                    className="w-5 h-5 cursor-pointer hover:text-red-500"
+                    onClick={() => navigate("/wishlist")}
+                  />
+                  {wishlistItemsCount > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                      {wishlistItemsCount}
+                    </span>
+                  )}
+                </div>
               </Link>
             </div>
 

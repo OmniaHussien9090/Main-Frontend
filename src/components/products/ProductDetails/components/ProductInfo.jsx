@@ -1,13 +1,14 @@
-import React from 'react';
-import RatingStars from '../../RatingStars';
-import ProductTabs from './ProductTabs';
+import React from "react";
+import RatingStars from "../../RatingStars";
+import ProductTabs from "./ProductTabs";
 import { useDispatch } from "react-redux";
 import { addCartItem } from "../../../../redux/cartActions";
 import { useTranslation } from "react-i18next";
-import i18n from '../../../../i18n';
+import i18n from "../../../../i18n";
 import { useNavigate } from "react-router-dom"; // لو تستخدم react-router
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FiHeart } from "react-icons/fi";
 
 const ProductInfo = ({
   product,
@@ -17,37 +18,72 @@ const ProductInfo = ({
   handleVariantChange,
   addToCart,
   toggleWishlist,
-  isWishlisted
+  isWishlisted,
 }) => {
   const { t } = useTranslation("productdetails");
-  const currentLang = i18n.language; 
+  const currentLang = i18n.language;
   const variant = product.variants[selectedVariant];
   const maxQuantity = variant.inStock || 10;
   const dispatch = useDispatch();
   const navigate = useNavigate();
- const handleAddToCart = () => {
-  const token = localStorage.getItem("token");
-  if (!token) {
-    toast.error(t("productInfo.mustLoginFirst"));
-    navigate("/login");
-    return;
-  }
+  const handleAddToCart = () => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      toast.error(t("productInfo.mustLoginFirst"));
+      navigate("/login");
+      return;
+    }
 
-  dispatch(addCartItem({ product, quantity }))
-    .unwrap()
-    .then(() => {
-      toast.success(t("productInfo.addedToCart"));
-    })
-    .catch((error) => {
-      toast.error(error.message || "Failed to add to cart");
-    });
-};
+    dispatch(addCartItem({ product, quantity }))
+      .unwrap()
+      .then(() => {
+        toast.success(t("productInfo.addedToCart"));
+      })
+      .catch((error) => {
+        toast.error(error.message || "Failed to add to cart");
+      });
+  };
+  const handleWishlistClick = (e) => {
+    e.preventDefault();
+    const token = localStorage.getItem("token");
+    if (!token) {
+      toast.error(t("productInfo.mustLoginFirst"));
+      navigate("/login");
+      return;
+    }
 
+    if (isWishlisted) {
+      // Find all wishlist items for this product
+      const itemsToRemove = wishlistProducts
+        .filter((p) => p.productId === product._id)
+        .map((item) => item._id);
+
+      // Remove all matching items
+      itemsToRemove.forEach((id) => {
+        dispatch(removeFromWishlist(id));
+      });
+      toast.success(t("productInfo.removedFromWishlist"));
+    } else {
+      dispatch(
+        addToWishlist({
+          _id: variant._id,
+          productId: product._id,
+          name: product.name, // Using product name instead of variant name
+          price: variant.price,
+          discountPrice: variant.discountPrice,
+          image: variant.images?.[0] || product.images?.[0],
+          color: variant.color,
+          inStock: variant.inStock,
+        })
+      );
+      toast.success(t("productInfo.addedToWishlist"));
+    }
+  };
 
   return (
     <div className="md:w-1/2">
       <h1 className="text-2xl md:text-3xl font-bold mb-2">
-        {variant.name?.[currentLang] || t("productInfo.defaultName")} 
+        {variant.name?.[currentLang] || t("productInfo.defaultName")}
       </h1>
 
       <div className="flex items-center mb-4">
@@ -82,7 +118,9 @@ const ProductInfo = ({
                     : "border-gray-300"
                 }`}
               >
-                {v.color?.[currentLang] || t("productInfo.variant", { number: index + 1 })} {/* تعديل من en إلى currentLang */}
+                {v.color?.[currentLang] ||
+                  t("productInfo.variant", { number: index + 1 })}{" "}
+                {/* تعديل من en إلى currentLang */}
               </button>
             ))}
           </div>
@@ -108,40 +146,36 @@ const ProductInfo = ({
           </button>
         </div>
         <button
-  className="bg-black w-40 text-white py-3 px-6 cursor-pointer transition-colors"
-  onClick={() => handleAddToCart()} 
-  disabled={variant.inStock <= 0}
->
-  {variant.inStock > 0 ? t("productInfo.addToCart") : t("productInfo.outOfStock")}
-</button>
+          className="bg-black w-40 text-white py-3 px-6 cursor-pointer transition-colors"
+          onClick={() => handleAddToCart()}
+          disabled={variant.inStock <= 0}
+        >
+          {variant.inStock > 0
+            ? t("productInfo.addToCart")
+            : t("productInfo.outOfStock")}
+        </button>
       </div>
 
       <div className="mt-4">
         <button
-          onClick={toggleWishlist}
-          className={`py-3 flex items-start cursor-pointer gap-2 transition-colors ${
-            isWishlisted ? "text-red-600" : "border-none"
+          onClick={handleWishlistClick}
+          className={`flex items-center gap-2 py-4 rounded-full transition-colors ${
+            isWishlisted
+              ? "text-red-500 hover:text-red-600"
+              : "text-gray-700 hover:text-black"
           }`}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className={`h-6 w-6 transition-colors ${
-              isWishlisted
-                ? "text-red-600 fill-current"
-                : "text-gray-400 fill-none"
-            }`}
-            viewBox="0 0 24 24"
+          <FiHeart
+            size={20}
+            fill={isWishlisted ? "currentColor" : "none"}
             stroke="currentColor"
-            strokeWidth={isWishlisted ? "0" : "2"}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-            />
-          </svg>
-          <span className={isWishlisted ? "text-red-600" : "text-gray-500"}>
-            {isWishlisted ? t("productInfo.wishlisted") : t("productInfo.addToWishlist")}
+            strokeWidth={isWishlisted ? 1.5 : 2}
+            className="transition-all duration-200"
+          />
+          <span className="text-sm font-medium">
+            {isWishlisted
+              ? t("productInfo.wishlisted")
+              : t("productInfo.addToWishlist")}
           </span>
         </button>
       </div>
@@ -150,14 +184,16 @@ const ProductInfo = ({
         <div className="mb-4 flex gap-2">
           <h3 className="font-semibold">{t("productInfo.color")}:</h3>
           <p className="text-gray-500">
-            {variant.color?.[currentLang] || t("productInfo.noColor")} {/* تعديل من en إلى currentLang */}
+            {variant.color?.[currentLang] || t("productInfo.noColor")}{" "}
+            {/* تعديل من en إلى currentLang */}
           </p>
         </div>
 
         <div className="mb-4 flex gap-2">
           <h3 className="font-semibold">{t("productInfo.material")}:</h3>
           <p className="text-gray-500">
-            {product.material?.[currentLang] || t("productInfo.noMaterial")} {/* تعديل من en إلى currentLang */}
+            {product.material?.[currentLang] || t("productInfo.noMaterial")}{" "}
+            {/* تعديل من en إلى currentLang */}
           </p>
         </div>
 
@@ -178,12 +214,14 @@ const ProductInfo = ({
             </div>
           )}
 
-        <div className="mb-4 flex gap-2">
+        <div className="flex gap-2">
           <h3 className="font-semibold">Availability: </h3>
-          <p className="text-gray-500">
-            {variant.inStock > 0
-              ? `In Stock (${variant.inStock} available)`
-              : t("productInfo.outOfStock")}
+          <p
+            className={`${
+              variant.inStock > 0 ? "text-green-600" : "text-red-600"
+            }`}
+          >
+            {variant.inStock > 0 ? `${variant.inStock}` : t("Out of stock")}
           </p>
         </div>
 

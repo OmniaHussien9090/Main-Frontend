@@ -6,9 +6,11 @@ import i18n from "../../i18n";
 import { FaEye, FaHeart, FaShoppingBag } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItem, fetchCart } from "../../redux/cartActions";
-import { toggleWishlistItem, fetchWishlist } from "../../redux/wishList";
+import { addToWishlist, removeFromWishlist } from "../../redux/wishList";
 import { toast } from "react-toastify";
 import { api } from "../../axios/axios";
+import { FiHeart } from "react-icons/fi";
+
 
 const ProductGrid = ({
   hasLoaded,
@@ -23,6 +25,19 @@ const ProductGrid = ({
   const wishlist = useSelector((state) => state.wishlist?.items || []);
   const wishlistCount = useSelector((state) => state.wishlist.items.length);
   const cartCount = useSelector((state) => state.cart.items.length);
+  const wishlistItems = useSelector((state) => state.wishlist.items);
+
+  const handleWishlistClick = (e, variant) => {
+    e.preventDefault();
+    const isInWishlist = wishlistItems.includes(variant._id);
+
+    // Using the new reducers
+    if (isInWishlist) {
+      dispatch(removeFromWishlist(variant._id));
+    } else {
+      dispatch(addToWishlist(variant));
+    }
+  };
 
   // تحديث المفضلة عند تحميل الصفحة
   useEffect(() => {
@@ -138,23 +153,14 @@ const ProductGrid = ({
                 </button>
 
                 <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    handleToggleWishlist(variant.productId);
-                  }}
-                  className={`bg-white p-3 rounded-full transition-colors ${
-                    wishlist.some((item) => item._id === variant.productId)
-                      ? "text-red-500 hover:bg-red-100"
-                      : "hover:bg-red-500 hover:text-white"
+                  className={`p-2 rounded-full transition-colors ${
+                    wishlistItems.includes(variant._id)
+                      ? "bg-orange-500 text-white"
+                      : "bg-white hover:bg-orange-500 hover:text-white cursor-pointer "
                   }`}
-                  title={
-                    wishlist.some((item) => item._id === variant.productId)
-                      ? t("removeFromWishlist")
-                      : t("addToWishlist")
-                  }
+                  onClick={(e) => handleWishlistClick(e, variant)}
                 >
-                  <FaHeart />
+                  <FiHeart size={20} />
                 </button>
 
                 <Link
