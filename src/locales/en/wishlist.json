@@ -1,0 +1,19 @@
+{
+  "title": "My Wishlist",
+  "subtitle": "Your saved items",
+  "empty": {
+    "title": "Your wishlist is empty",
+    "message": "Start adding items to your wishlist"
+  },
+  "remove": "Remove from wishlist",
+  "addToCart": "Add to Cart",
+  "material": "Material",
+  "removed": "Product removed from wishlist",
+  "error": "Error removing product from wishlist",
+  "cart": {
+    "add": "Add to Cart",
+    "added": "Product added to cart",
+    "error": "Error adding product to cart",
+    "noVariant": "No variant available"
+  }
+} 

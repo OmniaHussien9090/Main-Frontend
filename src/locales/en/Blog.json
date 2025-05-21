@@ -1,0 +1,28 @@
+{
+  "searchPlaceholder": "Search blog posts...",
+  "noResults": "No blog posts found.",
+  "loading": "Loading blog posts...",
+  "error": "An error occurred while loading blog posts.",
+  "tags": "Tags",
+  "author": "Author",
+  "recentPosts": "Recent Posts",
+  "categories": "Categories",
+  "paginationPrev": "Previous",
+  "paginationNext": "Next",
+   "blogPost": {
+    "likedBy": "Liked by",
+    "defaultTitle": "New modern sofa is here",
+    "defaultContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "readMore": "Read more",
+    "by": "By",
+    "defaultTags": "Newest, sofa and chair, wooden"
+  },
+  "blogSidebar": {
+    "searchPlaceholder": "Search...",
+    "popularPosts": "Popular Posts",
+    "recentPosts": "Recent Posts",
+    "defaultTitle": "Untitled",
+    "defaultRecentTitle": "Untitled Post"
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+    "welcomeBack": "Welcome back!",
+    "enterCredentials": "Enter your credentials to access your account",
+    "emailAddress": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "invalidEmail": "Invalid email format",
+    "emailRequired": "Email is required",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "passwordRequired": "Password is required",
+    "forgetPassword": "Forget Password?",
+    "rememberMe": "Remember for 30 days",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "or": "OR",
+    "loginWithGoogle": "Login with Google",
+    "loginWithApple": "Login with Apple",
+    "dontHaveAccount": "Don’t have an account?",
+    "signUp": "Sign Up",
+    "successLogin": "Login successful!",
+    "errorLogin": "Invalid email or password.",
+    "pleaseVerifyEmail": "Please verify your email before logging in."
+  }

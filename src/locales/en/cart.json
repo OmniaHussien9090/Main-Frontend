@@ -1,0 +1,23 @@
+{
+  "title": "Shopping Cart",
+  "loading": "Loading...",
+  "error": "Something went wrong!",
+  "empty": "Your cart is empty.",
+  "continueShopping": "Continue Shopping",
+  "products": "Products",
+  "quantity": "Quantity",
+  "total": "Total",
+  "actions": "Actions",
+  "color": "Color",
+  "clearCart": "Clear Cart",
+  "orderSummary": "Order Summary",
+  "discountVoucher": "Discount Voucher",
+  "apply": "Apply",
+  "subTotal": "Sub Total",
+  "discount": "Discount (10%)",
+  "deliveryFee": "Delivery Fee",
+  "finalTotal": "Total",
+  "warrantyText": "90 Day Limited Warranty against manufacturer’s defects",
+  "warrantyDetails": "Details",
+  "checkoutNow": "Checkout Now"
+}

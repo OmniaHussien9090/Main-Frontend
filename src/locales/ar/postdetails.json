@@ -1,0 +1,32 @@
+{
+
+    "backToPosts": "العودة إلى المنشورات",
+    "error": "خطأ",
+    "postNotFound": "لم يتم العثور على المنشور",
+    "popularPosts": "المنشورات الشائعة",
+    "recentPosts": "المنشورات الحديثة",
+    "likedBy": "أعجب بـ:",
+    "untitledPost": "منشور بدون عنوان",
+    "noContent": "لا يوجد محتوى.",
+  "showComments": "عرض التعليقات",
+  "hideComments": "إخفاء التعليقات",
+  "postMeta": {
+    "by": "بواسطة",
+    "tags": "العلامات"
+  },
+  
+
+  "untitled": "بدون عنوان",
+  "postImageAlt": "صورة المنشور",
+  "comment": {
+    "yourName": "اسمك",
+    "yourEmail": "بريدك الإلكتروني",
+    "yourComment": "تعليقك",
+    "submit": "إرسال",
+    "savingInfo": "احفظ معلوماتي للمرة القادمة"
+  },
+  "next":"التالي",
+  "previous":"السابق"
+
+
+}

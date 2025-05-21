@@ -1,0 +1,11 @@
+{
+    "title": "أرسل لنا رسالة",
+    "nameLabel": "الاسم",
+    "namePlaceholder": "اسمك",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "messageLabel": "الرسالة",
+    "messagePlaceholder": "اكتب رسالتك هنا...",
+    "submitButton": "إرسال",
+    "successMessage": "شكراً لرسالتك!"
+}

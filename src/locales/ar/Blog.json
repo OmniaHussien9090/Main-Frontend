@@ -1,0 +1,27 @@
+{
+  "searchPlaceholder": "ابحث في منشورات المدونة...",
+  "noResults": "لم يتم العثور على منشورات.",
+  "loading": "جاري تحميل المنشورات...",
+  "error": "حدث خطأ أثناء تحميل منشورات المدونة.",
+  "tags": "الوسوم",
+  "author": "الكاتب",
+  "recentPosts": "أحدث المنشورات",
+  "categories": "التصنيفات",
+  "paginationPrev": "السابق",
+  "paginationNext": "التالي",
+   "blogPost": {
+    "likedBy": "أعجب به",
+    "defaultTitle": "أريكة حديثة جديدة هنا",
+    "defaultContent": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسكينغ إيليت...",
+    "readMore": "اقرأ المزيد",
+    "by": "بواسطة",
+    "defaultTags": "الأحدث، أريكة وكرسي، خشبي"
+  },
+  "blogSidebar": {
+    "searchPlaceholder": "بحث...",
+    "popularPosts": "المشاركات الشائعة",
+    "recentPosts": "المشاركات الأخيرة",
+    "defaultTitle": "بدون عنوان",
+    "defaultRecentTitle": "مقال بدون عنوان"
+  }
+}

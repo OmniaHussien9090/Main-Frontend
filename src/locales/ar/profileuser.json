@@ -1,0 +1,28 @@
+{
+  "profileOverviewTitle": "نظرة عامة على الملف الشخصي",
+  "generalInfoTitle": "المعلومات العامة",
+    "userName": {
+    "en": "First Name (EN)",
+    "ar": "الاسم (AR)"
+  },
+  "address": {
+    "en": "Address (EN)",
+    "ar": "العنوان (AR)"
+  },
+  "phone": "الهاتف",
+  "email": "البريد الإلكتروني",
+  "profileOverview": "ملف المستخدم",
+  "updateProfile": "تحديث الملف",
+  "changePassword": "تغيير كلمة المرور",
+  "logout": "تسجيل الخروج",
+  "unauthorizedAccess": "دخول غير مصرح به",
+  "failedFetchUser": "فشل في جلب بيانات المستخدم",
+  "unauthorizedLoginAgain": "غير مصرح. يرجى تسجيل الدخول مرة أخرى.",
+  "updateFailed": "فشل التحديث",
+  "somethingWentWrong": "حدث خطأ أثناء التحديث",
+  "myOrders": "طلباتي",
+  "wishlist": "قائمة الرغبات",
+  "showMenu": "عرض القائمة",
+  "hideMenu": "إخفاء القائمة",
+  "userMenu": "قائمة المستخدم"
+}

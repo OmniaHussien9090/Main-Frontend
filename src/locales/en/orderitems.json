@@ -1,0 +1,16 @@
+{
+  "name": "Name",
+  "address": "Address",
+  "postalCode": "Postal Code",
+  "country": "Country",
+  "state": "State",
+  "city": "City",
+  "orderItems": "Order Items",
+  "id": "ID",
+  "image": "Image",
+  "productName": "Name",
+  "date": "Date",
+  "price": "Price",
+  "quantity": "Quantity",
+  "back": "Back"
+}

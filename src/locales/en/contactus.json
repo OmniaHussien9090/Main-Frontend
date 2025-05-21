@@ -1,0 +1,11 @@
+{
+    "title": "Drop us a Message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your Email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "submitButton": "Submit",
+    "successMessage": "Thanks for your message!"
+  }

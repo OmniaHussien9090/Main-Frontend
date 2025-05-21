@@ -1,0 +1,30 @@
+{
+ 
+    "backToPosts": "Back to Posts",
+    "error": "Error",
+    "postNotFound": "Post not found",
+    "popularPosts": "Popular Posts",
+    "recentPosts": "Recent Posts",
+    "likedBy": "Liked by:",
+    "untitledPost": "Untitled Post",
+    "noContent": "No content available.",
+"showComments": "Show Comments",
+  "hideComments": "Hide Comments",
+  "postMeta": {
+    "by": "By",
+    "tags": "Tags"
+  },
+  
+  "untitled": "Untitled",
+  "postImageAlt": "Post image",
+  "comment": {
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourComment": "Your Comment",
+    "submit": "Submit",
+    "savingInfo": "Save my information for next time"
+  },
+  "next":"Next",
+  "previous":"Previous"
+
+}

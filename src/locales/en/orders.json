@@ -1,0 +1,20 @@
+{
+  "pendingOrders": "Pending Orders",
+  "shippedOrders": "Shipped Orders",
+  "deliveredOrders": "Delivered Orders",
+  "cancelledOrders": "Cancelled Orders",
+  "orderId": "Order ID",
+  "date": "Date",
+  "totalPrice": "Total Price",
+  "quantity": "Qty",
+  "status": "Status",
+  "payment": "Payment",
+  "action": "Action",
+  "view": "View",
+  "paid": "Paid",
+  "unpaid": "Unpaid",
+  "pending": "Pending",
+  "shipped": "Shipped",
+  "delivered": "Delivered",
+  "cancelled": "Cancelled"
+}

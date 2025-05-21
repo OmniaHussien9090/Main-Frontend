@@ -1,0 +1,11 @@
+/* src/index.css أو global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+@import "tailwindcss/typography";
+@font-face {
+  font-family: "PTSans";
+  src: url("./assets/fonts/PTSans-Regular.ttf") format("truetype");
+}
+

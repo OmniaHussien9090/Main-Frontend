@@ -1,0 +1,38 @@
+{
+  "loading": "Loading product...",
+  "error": "Error: {{message}}",
+  "backToProducts": "Back to Products",
+
+  "productTabs": {
+    "description": "Description",
+    "additional": "Additional",
+    "preview": "Preview",
+    "noDescription": "No description available.",
+    "noAdditional": "No Additional Information",
+    "noPreview": "No preview available"
+  },
+
+  "relatedProducts": {
+    "title": "Related Products",
+    "noRelated": "No related products found...",
+    "defaultAlt": "Related product",
+    "defaultName": "Product"
+  },
+
+  "productInfo": {
+    "defaultName": "Product Name",
+    "reviews": "{{count}} reviews",
+    "variants": "Variants",
+    "variant": "Variant {{number}}",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock",
+    "wishlisted": "Wishlisted",
+    "addToWishlist": "Add to Wishlist",
+    "color": "Color",
+    "noColor": "No color information available.",
+    "material": "Material",
+    "noMaterial": "No material information available.",
+      "mustLoginFirst": "You must log in first",
+  "addedToCart": "Added to cart successfully"
+  }
+}

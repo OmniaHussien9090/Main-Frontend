@@ -1,0 +1,38 @@
+{
+  "delivery_address": "Delivery Address",
+  "first_name": "First name",
+  "last_name": "Last name",
+  "address_placeholder": "Enter delivery address",
+  "select_country": "Select Country",
+  "select_state": "Select State",
+  "no_state": "No State",
+  "city": "City",
+  "zip_code": "Zip code",
+  "phone_number": "Phone number",
+
+  "shipping_method": "Shipping method",
+  "standard_shipping": "Standard shipping (3-5 days)",
+  "express_shipping": "Expedited shipping (1-2 days)",
+  "standard_shipping_price": "$7.00",
+  "express_shipping_price": "$10.00",
+
+  "payment": "Payment",
+  "cash_on_delivery": "Cash On Delivery",
+  "paypal": "PayPal",
+  "pay_now": "Pay now",
+
+  "furniture": "Furniture",
+  "show_more": "Show More",
+
+  "discount_placeholder": "Discount code or gift card",
+  "apply": "Apply",
+
+  "subtotal": "Subtotal",
+  "shipping": "Shipping",
+  "total": "Total",
+
+  "fill_required_fields": "Please fill in all required address fields.",
+  "order_failed": "Failed to place order. Please try again.",
+  "paypal_transaction_success": "Transaction completed by",
+  "paypal_error": "An error occurred with PayPal payment."
+}

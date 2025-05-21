@@ -1,0 +1,32 @@
+{
+  "profileOverviewTitle": "Profile Overview",
+  "generalInfoTitle": "General Info",
+  "userName": {
+    "en": "First Name (EN)",
+    "ar": "الاسم (AR)"
+  },
+  "address": {
+    "en": "Address (EN)",
+    "ar": "العنوان (AR)"
+  },
+  "phone": "Phone",
+  "email": "Email",
+  "profileOverview": "Profile Overview",
+  "updateProfile": "Update Profile",
+  "changePassword": "Change Password",
+  "logout": "Logout",
+  "unauthorizedAccess": "Unauthorized access",
+  "failedFetchUser": "Failed to fetch user",
+  "unauthorizedLoginAgain": "Unauthorized. Please login again.",
+  "updateFailed": "Update failed",
+  "somethingWentWrong": "Something went wrong during update",
+  "myOrders": "My Orders",
+  "wishlist": "Wishlist",
+  "showMenu": "Show Menu",
+  "hideMenu": "Hide Menu",
+  "userMenu":"User Menu"
+}
+
+
+
+

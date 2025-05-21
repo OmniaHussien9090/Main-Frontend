@@ -1,0 +1,47 @@
+{
+  "shopOnlineTitle": "Shop online",
+  "shopOnlineDesc": "Shop from the comfort of your home with a smooth, modern online experience.",
+  
+  "freeShippingTitle": "Free shipping",
+  "freeShippingDesc": "Enjoy fast and free delivery straight to your doorstep, hassle-free.",
+  
+  "returnPolicyTitle": "Return policy",
+  "returnPolicyDesc": "Not satisfied? Our return process is easy and guaranteed to keep you happy.",
+  
+  "paymentTitle": "PAYMENT",
+  "paymentDesc": "Secure and flexible payment methods for a seamless checkout experience.",
+  
+  "bannerAlt": "Banner About",
+  
+  "lastBlogPost": "Last Blog Post",
+  
+  "card1Title": "Paint your office in natural colors only",
+  "card1Date": "Sep 26, 2022",
+  
+  "card2Title": "Choose furniture with a modern twist",
+  "card2Date": "Oct 10, 2022",
+  
+  "card3Title": "Decorate your living room with soft touches",
+  "card3Date": "Nov 15, 2022",
+  "hero": {
+    "title": "About us"
+  },
+
+  "functionality": {
+    "title": "Functionality meets perfection",
+    "description": "We blend sleek modern design with top-notch functionality to transform your space into something truly exceptional."
+  },
+  
+  "progress": {
+    "creativity": "Creativity",
+    "creativityValue": "72%",
+    "advertising": "Advertising",
+    "advertisingValue": "84%",
+    "design": "Design",
+    "designValue": "72%"
+  },
+
+  "card": {
+    "readMore": "Read More"
+  }
+}

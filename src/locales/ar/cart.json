@@ -1,0 +1,23 @@
+{
+  "title": "سلة التسوق",
+  "loading": "جارٍ التحميل...",
+  "error": "حدث خطأ ما!",
+  "empty": "سلة التسوق فارغة.",
+  "continueShopping": "متابعة التسوق",
+  "products": "المنتجات",
+  "quantity": "الكمية",
+  "total": "الإجمالي",
+  "actions": "الإجراءات",
+  "color": "اللون",
+  "clearCart": "إفراغ السلة",
+  "orderSummary": "ملخص الطلب",
+  "discountVoucher": "قسيمة الخصم",
+  "apply": "تطبيق",
+  "subTotal": "الإجمالي الفرعي",
+  "discount": "خصم (10%)",
+  "deliveryFee": "رسوم التوصيل",
+  "finalTotal": "الإجمالي الكلي",
+  "warrantyText": "ضمان محدود لمدة 90 يومًا ضد عيوب التصنيع",
+  "warrantyDetails": "تفاصيل",
+  "checkoutNow": "الدفع الآن"
+}

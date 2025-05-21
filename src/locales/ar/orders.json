@@ -1,0 +1,20 @@
+{
+  "pendingOrders": "الطلبات المعلقة",
+  "shippedOrders": "الطلبات المشحونة",
+  "deliveredOrders": "الطلبات المستلمة",
+  "cancelledOrders": "الطلبات الملغاة",
+  "orderId": "رقم الطلب",
+  "date": "التاريخ",
+  "totalPrice": "السعر الإجمالي",
+  "quantity": "الكمية",
+  "status": "الحالة",
+  "payment": "الدفع",
+  "action": "الإجراء",
+  "view": "عرض",
+  "paid": "مدفوع",
+  "unpaid": "غير مدفوع",
+  "pending": "معلق",
+  "shipped": "تم الشحن",
+  "delivered": "تم التوصيل",
+  "cancelled": "ملغى"
+}

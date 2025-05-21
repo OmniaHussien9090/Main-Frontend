@@ -1,0 +1,38 @@
+{
+  "delivery_address": "عنوان التوصيل",
+  "first_name": "الاسم الأول",
+  "last_name": "اسم العائلة",
+  "address_placeholder": "أدخل عنوان التوصيل",
+  "select_country": "اختر الدولة",
+  "select_state": "اختر المنطقة",
+  "no_state": "لا توجد منطقة",
+  "city": "المدينة",
+  "zip_code": "الرمز البريدي",
+  "phone_number": "رقم الهاتف",
+
+  "shipping_method": "طريقة الشحن",
+  "standard_shipping": "شحن عادي (3-5 أيام)",
+  "express_shipping": "شحن سريع (1-2 يوم)",
+  "standard_shipping_price": "$7.00",
+  "express_shipping_price": "$10.00",
+
+  "payment": "طريقة الدفع",
+  "cash_on_delivery": "الدفع عند الاستلام",
+  "paypal": "باي بال",
+  "pay_now": "ادفع الآن",
+
+  "furniture": "الأثاث",
+  "show_more": "عرض المزيد",
+
+  "discount_placeholder": "كود الخصم أو بطاقة الهدية",
+  "apply": "تطبيق",
+
+  "subtotal": "المجموع الفرعي",
+  "shipping": "الشحن",
+  "total": "الإجمالي",
+
+  "fill_required_fields": "يرجى تعبئة جميع الحقول المطلوبة.",
+  "order_failed": "فشل في تقديم الطلب. يرجى المحاولة مرة أخرى.",
+  "paypal_transaction_success": "تمت المعاملة بواسطة",
+  "paypal_error": "حدث خطأ أثناء الدفع عبر باي بال."
+}

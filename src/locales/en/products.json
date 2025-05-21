@@ -1,0 +1,24 @@
+{
+  "showingProducts": "Showing {{current}} of {{total}} products",
+
+  "title": "Sort By Reviews",
+  "rating.up": "&up",
+
+  "pagination.previous": "Previous",
+  "pagination.next": "Next",
+  "search_placeholder": "Search...",
+  "reset_filters": "Reset All Filters",
+  "no_products_title": "No products found",
+  "no_products_message": "We couldn't find any products matching your needs. Try adjusting your search criteria.",
+  "categories.title": "Categories",
+    "categories.unnamed": "Unnamed Category",
+    "categories.more": "{{count}} more categories",
+    "categories.none": "No categories available","colors.title": "Color",
+    "colors.more": "{{count}} more colors",
+     "price.title": "Price",
+    "price.range": "Price ${{min}} - ${{max}}",
+    "price.button": "Filter"
+
+
+}
+

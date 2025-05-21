@@ -1,0 +1,28 @@
+{
+    "title": "Get Started Now",
+    "name_en": "Name (English)",
+    "name_ar": "Name (Arabic)",
+    "email": "Email Address",
+    "password": "Password",
+    "signup_button": "Sign Up",
+    "signing_up": "Signing Up...",
+    "already_account": "Already have an account?",
+    "sign_in": "Sign In",
+    "or": "OR",
+    "login_google": "Login with Google",
+    "login_apple": "Login with Apple",
+    "success_registration": "Registration successful!",
+    "error_registration": "Registration failed.",
+    "validation": {
+      "name_required": "Name is required",
+      "name_ar_required": "Name in Arabic is required",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email format",
+      "password_required": "Password is required",
+      "password_min": "Password must be at least 8 characters",
+      "password_upper": "Password must contain at least one uppercase letter",
+      "password_lower": "Password must contain at least one lowercase letter",
+      "password_number": "Password must contain at least one number",
+      "password_special": "Password must contain at least one special character"
+    }
+  }

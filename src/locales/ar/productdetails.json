@@ -1,0 +1,39 @@
+
+{
+  "loading": "جارٍ تحميل المنتج...",
+  "error": "خطأ: {{message}}",
+  "backToProducts": "العودة إلى المنتجات",
+
+  "productTabs": {
+    "description": "الوصف",
+    "additional": "معلومات إضافية",
+    "preview": "معاينة",
+    "noDescription": "لا يوجد وصف متاح.",
+    "noAdditional": "لا توجد معلومات إضافية",
+    "noPreview": "لا توجد معاينة متاحة"
+  },
+
+  "relatedProducts": {
+    "title": "منتجات ذات صلة",
+    "noRelated": "لا توجد منتجات ذات صلة...",
+    "defaultAlt": "منتج ذو صلة",
+    "defaultName": "منتج"
+  },
+
+  "productInfo": {
+    "defaultName": "اسم المنتج",
+    "reviews": "{{count}} تقييم",
+    "variants": "الخيارات",
+    "variant": "الخيار {{number}}",
+    "addToCart": "أضف إلى السلة",
+    "outOfStock": "غير متوفر",
+    "wishlisted": "تمت الإضافة إلى المفضلة",
+    "addToWishlist": "أضف إلى المفضلة",
+    "color": "اللون",
+    "noColor": "لا توجد معلومات عن اللون.",
+    "material": "الخامة",
+    "noMaterial": "لا توجد معلومات عن الخامة.",
+     "mustLoginFirst": "يجب عليك تسجيل الدخول أولاً",
+  "addedToCart": "تمت الإضافة إلى السلة بنجاح"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "shopOnlineTitle": "تسوق أونلاين",
+  "shopOnlineDesc": "تسوق من راحة منزلك مع تجربة حديثة وسلسة على الإنترنت.",
+  
+  "freeShippingTitle": "شحن مجاني",
+  "freeShippingDesc": "استمتع بتوصيل سريع ومجاني إلى باب منزلك بدون عناء.",
+  
+  "returnPolicyTitle": "سياسة الإرجاع",
+  "returnPolicyDesc": "غير راضٍ؟ عملية الإرجاع لدينا سهلة ومضمونة لإرضائك.",
+  
+  "paymentTitle": "الدفع",
+  "paymentDesc": "طرق دفع آمنة ومرنة لتجربة دفع سلسة.",
+  
+  "bannerAlt": "بانر الصفحة",
+  
+  "lastBlogPost": "آخر تدوينة",
+  
+  "card1Title": "قم بطلاء مكتبك بألوان طبيعية فقط",
+  "card1Date": "26 سبتمبر 2022",
+  
+  "card2Title": "اختر أثاثًا بلمسة عصرية",
+  "card2Date": "10 أكتوبر 2022",
+  
+  "card3Title": "زين غرفة المعيشة بلمسات ناعمة",
+  "card3Date": "15 نوفمبر 2022",
+   "hero": {
+    "title": "معلومات عنا"
+  },
+  
+  "functionality": {
+    "title": "الوظائف تلتقي بالكمال",
+    "description": "نمزج بين التصميم العصري الأنيق والوظائف المتقدمة لتحويل مساحتك إلى شيء استثنائي حقًا."
+  },
+  "progress": {
+    "creativity": "الإبداع",
+    "creativityValue": "٧٢٪",
+    "advertising": "الإعلانات",
+    "advertisingValue": "٨٤٪",
+    "design": "التصميم",
+    "designValue": "٧٢٪"
+  },
+  
+  "card": {
+    "readMore": "اقرأ المزيد"
+  }
+}

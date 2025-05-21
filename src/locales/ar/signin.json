@@ -1,0 +1,23 @@
+{
+    "welcomeBack": "مرحباً بعودتك!",
+    "enterCredentials": "أدخل بياناتك للدخول إلى حسابك",
+    "emailAddress": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل عنوان بريدك الإلكتروني",
+    "invalidEmail": "تنسيق البريد الإلكتروني غير صالح",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "forgetPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني لمدة 30 يوماً",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جاري تسجيل الدخول...",
+    "or": "أو",
+    "loginWithGoogle": "تسجيل الدخول بواسطة جوجل",
+    "loginWithApple": "تسجيل الدخول بواسطة آبل",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "signUp": "إنشاء حساب",
+    "successLogin": "تم تسجيل الدخول بنجاح!",
+    "errorLogin": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "pleaseVerifyEmail": "يرجى التحقق من بريدك الإلكتروني قبل تسجيل الدخول."
+  }
