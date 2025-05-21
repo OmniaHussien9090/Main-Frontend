@@ -26,7 +26,7 @@ import { ToastContainer } from "react-toastify";
 import { SearchProvider } from "./searchContext/SearchContext.jsx";
 import ForgetPass from "./components/SignUp/forgetPass.jsx";
 import NotFound from "./components/NotFound/notFound.jsx";
-import WishlistPage from "./components/wishList/wishList.jsx";
+import WishlistPage from "./components/wishList/WishlistPage.jsx";
 import Chatbot from "./components/Chatbot/Chatbot.jsx";
 import { FaComments } from "react-icons/fa";
 import "./chatbot-animate.css"; // سنضيف هذا الملف للأنيميشن
